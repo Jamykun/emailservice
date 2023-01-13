@@ -33,10 +33,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: email
 spec:
   selector:
-    app: myapp
+    app: email
   ports:
   - port: 5000
     targetPort: 8080
