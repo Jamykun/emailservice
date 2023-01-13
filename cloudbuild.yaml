@@ -11,7 +11,7 @@ steps:
 # Deploy de notre image
 - name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy
-  args: ['apply', '-f', '..manifest/8-email.yml']
+  args: ['apply', '-f', '8-email.yml']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=northamerica-northeast1-a'
   - 'CLOUDSDK_COMPUTE_REGION=northamerica-northeast1'
