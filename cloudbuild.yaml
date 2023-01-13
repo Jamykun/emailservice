@@ -15,4 +15,4 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=northamerica-northeast1-a'
   - 'CLOUDSDK_COMPUTE_REGION=northamerica-northeast1'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-pfr-main' 
+  - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-pfr-main'
