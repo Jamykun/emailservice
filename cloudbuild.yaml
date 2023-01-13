@@ -3,11 +3,11 @@ steps:
   # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
   id: build
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcr.io/formationgcp-baptiste/github.com/jamykun/email:$SHORT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcr.io/pfr/email:$SHORT_SHA', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   id: Push
-  args: ['push', 'gcr.io/$PROJECT_ID/gcr.io/formationgcp-baptiste/github.com/jamykun/email:$SHORT_SHA']
+  args: ['push', 'gcr.io/$PROJECT_ID/gcr.io/pfr/email:$COMMIT_SHA']
 # Deploy de notre image
 - name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy
