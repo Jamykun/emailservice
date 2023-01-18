@@ -21,7 +21,7 @@ spec:
       containers:
       - name: email-con
         image: python:3.7-slim
-        command: ['sh', '-c', 'echo The app is running! && sleep 3600']        
+        #command: ['sh', '-c', 'echo The app is running! && sleep 3600']        
         ports:
         - containerPort: 8080
         resources:
